@@ -1,0 +1,16 @@
+{
+  "name": "production",
+  "default_attributes": {
+    "app_environment": "production"
+  },
+  "json_class": "Chef::Role",
+  "env_run_lists": {
+  },
+  "run_list": [
+
+  ],
+  "description": "",
+  "chef_type": "role",
+  "override_attributes": {
+  }
+}

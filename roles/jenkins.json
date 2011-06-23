@@ -1,0 +1,9 @@
+{
+  "name": "jenkins",
+  "json_class": "Chef::Role",
+  "run_list": [
+    "recipe[tomcat]"
+  ],
+  "override_attributes": {
+  }
+}

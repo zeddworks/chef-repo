@@ -1,0 +1,29 @@
+{
+  "name": "redminerole",
+  "json_class": "Chef::Role",
+  "run_list": [
+    "recipe[mysql::client]",
+    "recipe[zw_redmine]",
+    "recipe[database::master]",
+    "role[production]",
+    "role[redmine_database_master]",
+    "recipe[application]"
+  ],
+  "override_attributes": {
+    "apps": {
+      "redmine": {
+        "production": {
+          "force": false,
+          "run_migrations": true
+        },
+        "staging": {
+          "force": true,
+          "run_migrations": true
+        }
+      }
+    },
+    "variables": {
+      "host": "localhost"
+    }
+  }
+}
