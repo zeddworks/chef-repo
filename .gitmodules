@@ -10,3 +10,6 @@
 [submodule "site-cookbooks/redmine"]
 	path = site-cookbooks/redmine
 	url = git@github.com:zeddworks/redmine_cookbook.git
+[submodule "site-cookbooks/jenkins"]
+	path = site-cookbooks/jenkins
+	url = git@github.com:zeddworks/jenkins_cookbook.git
