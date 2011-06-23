@@ -19,3 +19,6 @@
 [submodule "site-cookbooks/rvm"]
 	path = site-cookbooks/rvm
 	url = git@github.com:zeddworks/rvm_cookbook.git
+[submodule "site-cookbooks/jks"]
+	path = site-cookbooks/jks
+	url = git@github.com:zeddworks/jks_cookbook.git
