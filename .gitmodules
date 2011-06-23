@@ -1,3 +1,6 @@
 [submodule "site-cookbooks/gecode"]
 	path = site-cookbooks/gecode
 	url = git@github.com:zeddworks/gecode_cookbook.git
+[submodule "site-cookbooks/yumrepos"]
+	path = site-cookbooks/yumrepos
+	url = git@github.com:zeddworks/yumrepos_cookbook.git
