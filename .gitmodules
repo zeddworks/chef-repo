@@ -7,3 +7,6 @@
 [submodule "site-cookbooks/kanban"]
 	path = site-cookbooks/kanban
 	url = git@github.com:zeddworks/kanban_cookbook.git
+[submodule "site-cookbooks/redmine"]
+	path = site-cookbooks/redmine
+	url = git@github.com:zeddworks/redmine_cookbook.git
