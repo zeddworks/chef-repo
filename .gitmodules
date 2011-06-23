@@ -31,3 +31,6 @@
 [submodule "cookbooks/java"]
 	path = cookbooks/java
 	url = git://github.com/cookbooks/java.git
+[submodule "cookbooks/erlang"]
+	path = cookbooks/erlang
+	url = git://github.com/cookbooks/erlang.git
