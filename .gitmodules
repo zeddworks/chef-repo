@@ -28,3 +28,6 @@
 [submodule "site-cookbooks/chef-server_cookbook"]
 	path = site-cookbooks/chef-server_cookbook
 	url = git@github.com:zeddworks/chef-server_cookbook.git
+[submodule "cookbooks/java"]
+	path = cookbooks/java
+	url = git://github.com/cookbooks/java.git
