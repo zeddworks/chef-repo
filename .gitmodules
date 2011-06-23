@@ -25,3 +25,6 @@
 [submodule "site-cookbooks/couchdb"]
 	path = site-cookbooks/couchdb
 	url = git@github.com:zeddworks/couchdb_cookbook.git
+[submodule "site-cookbooks/chef-server_cookbook"]
+	path = site-cookbooks/chef-server_cookbook
+	url = git@github.com:zeddworks/chef-server_cookbook.git
