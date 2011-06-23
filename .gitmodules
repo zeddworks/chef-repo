@@ -22,3 +22,6 @@
 [submodule "site-cookbooks/jks"]
 	path = site-cookbooks/jks
 	url = git@github.com:zeddworks/jks_cookbook.git
+[submodule "site-cookbooks/couchdb"]
+	path = site-cookbooks/couchdb
+	url = git@github.com:zeddworks/couchdb_cookbook.git
