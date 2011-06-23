@@ -1,0 +1,3 @@
+[submodule "site-cookbooks/gecode"]
+	path = site-cookbooks/gecode
+	url = git@github.com:zeddworks/gecode_cookbook.git
