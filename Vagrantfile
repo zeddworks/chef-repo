@@ -8,7 +8,7 @@ Vagrant::Config.run do |config|
     #chef_server_config.vm.box = "vagrant-sid-amd64-rvm-06-20-2011-2c7d75"
     chef_server_config.vm.box = "vagrant-oel56-amd64-rvm-06-23-2011-8de16c"
     chef_server_config.vm.box_url = "http://www.zeddworks.com/vagrant-sid-amd64-rvm-06-20-2011-2c7d75.box"
-    chef_server_config.vm.boot_mode = :gui
+    #chef_server_config.vm.boot_mode = :gui
 
     chef_server_config.vm.forward_port("chef-server", 4000, 4000, :auto => true)
     chef_server_config.vm.forward_port("chef-webui", 4040, 4040, :auto => true)
