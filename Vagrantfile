@@ -5,16 +5,13 @@ Vagrant::Config.run do |config|
 
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.define :chef_server do |chef_server_config|
-    #chef_server_config.vm.box = "vagrant-sid-amd64-rvm-06-20-2011-2c7d75"
-    chef_server_config.vm.box = "vagrant-oel56-amd64-rvm-06-23-2011-8de16c"
-    #kudzu needs extra time for dhcp to time out with host-only network interfaces
-    chef_server_config.ssh.timeout = 200
+    chef_server_config.vm.box = "vagrant-sid-amd64-rvm-06-20-2011-2c7d75"
     chef_server_config.vm.box_url = "http://www.zeddworks.com/vagrant-sid-amd64-rvm-06-20-2011-2c7d75.box"
     #chef_server_config.vm.boot_mode = :gui
 
     chef_server_config.vm.forward_port("chef-server", 4000, 4000, :auto => true)
     chef_server_config.vm.forward_port("chef-webui", 4040, 4040, :auto => true)
-    #chef_server_config.vm.forward_port("apt-proxy", 3142, 3142, :auto => true)
+    chef_server_config.vm.forward_port("apt-proxy", 3142, 3142, :auto => true)
 
     chef_server_config.vm.customize do |vm|
       vm.memory_size = 1024
@@ -27,17 +24,14 @@ Vagrant::Config.run do |config|
     chef_server_config.vm.provision :chef_solo do |chef|
       chef.cookbooks_path = ["cookbooks", "site-cookbooks"]
       chef.roles_path = "roles"
-      #chef.add_role "debian-chef-server"
-      chef.add_role "redhat-chef-server"
+      chef.add_role "debian-chef-server"
     end
   end
 
   config.vm.define :chef_client do |chef_client_config|
-    #chef_client_config.vm.box = "vagrant-sid-amd64-rvm-06-20-2011-2c7d75"
-    chef_client_config.vm.box = "vagrant-oel56-amd64-rvm-06-23-2011-8de16c"
-    #kudzu needs extra time for dhcp to time out with host-only network interfaces
-    chef_client_config.ssh.timeout = 200
+    chef_client_config.vm.box = "vagrant-sid-amd64-rvm-06-20-2011-2c7d75"
     chef_client_config.vm.box_url = "http://www.zeddworks.com/vagrant-sid-amd64-rvm-06-20-2011-2c7d75.box"
+    #chef_server_config.vm.boot_mode = :gui
 
     chef_client_config.vm.forward_port "web", 3000, 8080, :auto => true
 
