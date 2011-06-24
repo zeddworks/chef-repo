@@ -34,3 +34,6 @@
 [submodule "site-cookbooks/chef-server"]
 	path = site-cookbooks/chef-server
 	url = git@github.com:zeddworks/chef-server_cookbook.git
+[submodule "cookbooks/yum"]
+	path = cookbooks/yum
+	url = git://github.com/cookbooks/yum.git
