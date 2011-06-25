@@ -5,8 +5,8 @@ Vagrant::Config.run do |config|
 
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.define :chef_server do |chef_server_config|
-    chef_server_config.vm.box = "vagrant-sid-amd64-rvm-06-20-2011-2c7d75"
-    chef_server_config.vm.box_url = "http://www.zeddworks.com/vagrant-sid-amd64-rvm-06-20-2011-2c7d75.box"
+    chef_server_config.vm.box = "vagrant-sid-amd64-rvm-06-25-2011-2c7d75"
+    chef_server_config.vm.box_url = "http://www.zeddworks.com/vagrant-sid-amd64-rvm-06-25-2011-2c7d75.box"
     #chef_server_config.vm.boot_mode = :gui
 
     chef_server_config.vm.forward_port("chef-server", 4000, 4000, :auto => true)
@@ -29,8 +29,8 @@ Vagrant::Config.run do |config|
   end
 
   config.vm.define :chef_client do |chef_client_config|
-    chef_client_config.vm.box = "vagrant-sid-amd64-rvm-06-20-2011-2c7d75"
-    chef_client_config.vm.box_url = "http://www.zeddworks.com/vagrant-sid-amd64-rvm-06-20-2011-2c7d75.box"
+    chef_client_config.vm.box = "vagrant-sid-amd64-rvm-06-25-2011-2c7d75"
+    chef_client_config.vm.box_url = "http://www.zeddworks.com/vagrant-sid-amd64-rvm-06-25-2011-2c7d75.box"
     #chef_server_config.vm.boot_mode = :gui
 
     chef_client_config.vm.forward_port "web", 3000, 8080, :auto => true
