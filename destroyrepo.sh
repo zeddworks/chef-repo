@@ -15,3 +15,8 @@ for i in `knife client list | grep -v chef-validator | grep -v chef-webui | grep
 do
   knife client delete $i -y
 done
+
+for i in `knife node list`
+do
+  knife node delete $i -y
+done
