@@ -39,4 +39,4 @@
 	url = git://github.com/cookbooks/yum.git
 [submodule "site-cookbooks/passenger_nginx"]
 	path = site-cookbooks/passenger_nginx
-	url = git://github.com/zeddworks/passenger_nginx_cookbook.git
+	url = git@github.com:zeddworks/passenger_nginx_cookbook.git
