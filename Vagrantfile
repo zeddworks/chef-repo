@@ -33,7 +33,7 @@ Vagrant::Config.run do |config|
     chef_client_config.vm.box_url = "http://www.zeddworks.com/vagrant-sid-amd64-rvm-06-25-2011-2c7d75.box"
     #chef_server_config.vm.boot_mode = :gui
 
-    chef_client_config.vm.forward_port "web", 3000, 8080, :auto => true
+    chef_client_config.vm.forward_port "web", 80, 8080, :auto => true
 
     chef_client_config.vm.customize do |vm|
       vm.memory_size = 2048
