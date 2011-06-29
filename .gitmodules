@@ -43,3 +43,6 @@
 [submodule "cookbooks/apt"]
 	path = cookbooks/apt
 	url = git://github.com/cookbooks/apt.git
+[submodule "site-cookbooks/postgresql"]
+	path = site-cookbooks/postgresql
+	url = git@github.com:zeddworks/postgresql_cookbook.git
