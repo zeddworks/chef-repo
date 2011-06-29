@@ -1531,7 +1531,8 @@
   "chef_environment": "_default",
   "run_list": [
     "recipe[passenger_nginx]",
-    "recipe[postgresql]"
+    "recipe[postgresql]",
+    "recipe[redmine]"
   ],
   "chef_type": "node"
 }
