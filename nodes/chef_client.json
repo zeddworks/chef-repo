@@ -1530,7 +1530,8 @@
   },
   "chef_environment": "_default",
   "run_list": [
-    "recipe[passenger_nginx]"
+    "recipe[passenger_nginx]",
+    "recipe[postgresql]"
   ],
   "chef_type": "node"
 }
