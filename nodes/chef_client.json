@@ -1532,7 +1532,7 @@
   "run_list": [
     "recipe[passenger_nginx]",
     "recipe[postgresql]",
-    "recipe[refinery]"
+    "recipe[chiliproject]"
   ],
   "chef_type": "node"
 }
