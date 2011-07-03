@@ -49,3 +49,6 @@
 [submodule "site-cookbooks/refinery"]
 	path = site-cookbooks/refinery
 	url = git@github.com:zeddworks/refinery_cookbook.git
+[submodule "site-cookbooks/chiliproject"]
+	path = site-cookbooks/chiliproject
+	url = git@github.com:zeddworks/chiliproject_cookbook.git
