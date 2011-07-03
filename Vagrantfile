@@ -25,6 +25,13 @@ Vagrant::Config.run do |config|
       chef.cookbooks_path = ["cookbooks", "site-cookbooks"]
       chef.roles_path = "roles"
       chef.add_role "debian-chef-server"
+      chef.json.merge!(
+        {
+          :apt => {
+            :proxy_url => "localhost:3142"
+          }
+        }
+      )
     end
   end
 
