@@ -1532,7 +1532,7 @@
   "run_list": [
     "recipe[passenger_nginx]",
     "recipe[postgresql]",
-    "recipe[redmine]"
+    "recipe[refinery]"
   ],
   "chef_type": "node"
 }
