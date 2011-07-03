@@ -43,3 +43,6 @@
 [submodule "site-cookbooks/postgresql"]
 	path = site-cookbooks/postgresql
 	url = git@github.com:zeddworks/postgresql_cookbook.git
+[submodule "site-cookbooks/kanban"]
+	path = site-cookbooks/kanban
+	url = git@github.com:zeddworks/kanban_cookbook
