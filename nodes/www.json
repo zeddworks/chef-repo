@@ -1533,7 +1533,7 @@
     "recipe[apt_cacher_ng]",
     "recipe[passenger_nginx]",
     "recipe[postgresql]",
-    "recipe[redmine]"
+    "recipe[chiliproject]"
   ],
   "chef_type": "node"
 }
