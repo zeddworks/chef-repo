@@ -5,7 +5,7 @@ Vagrant::Config.run do |config|
 
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.define :chef_server do |chef_server_config|
-    chef_server_config.vm.box = "vagrant-sid-amd64-rvm-07-01-2011-399abb"
+    chef_server_config.vm.box = "vagrant-squeeze-amd64-rvm-07-04-2011-6586c1"
     chef_server_config.vm.box_url = "http://www.zeddworks.com/vagrant-sid-amd64-rvm-07-01-2011-399abb.box"
     #chef_server_config.vm.boot_mode = :gui
 
@@ -36,7 +36,7 @@ Vagrant::Config.run do |config|
   end
 
   config.vm.define :chef_client do |chef_client_config|
-    chef_client_config.vm.box = "vagrant-sid-amd64-rvm-07-01-2011-399abb"
+    chef_client_config.vm.box = "vagrant-squeeze-amd64-rvm-07-04-2011-6586c1"
     chef_client_config.vm.box_url = "http://www.zeddworks.com/vagrant-sid-amd64-rvm-07-01-2011-399abb.box"
     #chef_client_config.vm.boot_mode = :gui
 
