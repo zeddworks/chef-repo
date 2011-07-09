@@ -41,7 +41,7 @@ Vagrant::Config.run do |config|
       vm.memory_size = 2048
     end
 
-    chef_client_config.vm.network "33.33.33.10"
+    chef_client_config.vm.network "33.33.33.11"
 
     chef_client_config.vm.share_folder "v-data", "/vagrant_data", "data"
 
