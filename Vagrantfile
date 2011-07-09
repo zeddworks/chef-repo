@@ -1,19 +1,19 @@
-config.ssh.max_tries = 200
-
 Vagrant::Config.run do |config|
   # All Vagrant configuration is done here. The most common configuration
   # options are documented and commented below. For a complete reference,
   # please see the online documentation at vagrantup.com.
 
   # Every Vagrant virtual environment requires a box to build off of.
+
+  config.ssh.max_tries = 200
+
   config.vm.define :chef_server do |chef_server_config|
-    chef_server_config.vm.box = "vagrant-squeeze-amd64-rvm-07-04-2011-6586c1"
+    chef_server_config.vm.box = "vagrant-oel56-amd64-rvm-07-08-2011-6586c1"
     chef_server_config.vm.box_url = "http://www.zeddworks.com/vagrant-squeeze-amd64-rvm-07-04-2011-6586c1.box"
     #chef_server_config.vm.boot_mode = :gui
 
     chef_server_config.vm.forward_port("chef-server", 4000, 4000, :auto => true)
     chef_server_config.vm.forward_port("chef-webui", 4040, 4040, :auto => true)
-    chef_server_config.vm.forward_port("apt-proxy", 3142, 3142, :auto => true)
 
     chef_server_config.vm.customize do |vm|
       vm.memory_size = 1024
@@ -26,19 +26,12 @@ Vagrant::Config.run do |config|
     chef_server_config.vm.provision :chef_solo do |chef|
       chef.cookbooks_path = ["cookbooks", "site-cookbooks"]
       chef.roles_path = "roles"
-      chef.add_role "debian-chef-server"
-      chef.json.merge!(
-        {
-          :apt => {
-            :proxy_url => "localhost:3142"
-          }
-        }
-      )
+      chef.add_role "redhat-chef-server"
     end
   end
 
   config.vm.define :chef_client do |chef_client_config|
-    chef_client_config.vm.box = "vagrant-squeeze-amd64-rvm-07-04-2011-6586c1"
+    chef_client_config.vm.box = "vagrant-oel56-amd64-rvm-07-08-2011-6586c1"
     chef_client_config.vm.box_url = "http://www.zeddworks.com/vagrant-squeeze-amd64-rvm-07-04-2011-6586c1.box"
     #chef_client_config.vm.boot_mode = :gui
 
@@ -56,13 +49,6 @@ Vagrant::Config.run do |config|
       chef.node_name = "chef_client"
       chef.chef_server_url = "http://33.33.33.100:4000"
       chef.validation_key_path = "#{ENV['HOME']}/.chef/validation.pem"
-      chef.json.merge!(
-        {
-          :apt => {
-            :proxy_url => "33.33.33.100:3142"
-          }
-        }
-      )
     end
   end
 
