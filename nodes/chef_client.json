@@ -1530,7 +1530,7 @@
   },
   "chef_environment": "_default",
   "run_list": [
-    "recipe[refinery]"
+    "recipe[gitorious]"
   ],
   "chef_type": "node"
 }
