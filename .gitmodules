@@ -52,3 +52,6 @@
 [submodule "site-cookbooks/chiliproject"]
 	path = site-cookbooks/chiliproject
 	url = git@github.com:zeddworks/chiliproject_cookbook.git
+[submodule "site-cookbooks/memcached"]
+	path = site-cookbooks/memcached
+	url = git@github.com:zeddworks/memcached_cookbook.git
