@@ -55,3 +55,6 @@
 [submodule "site-cookbooks/memcached"]
 	path = site-cookbooks/memcached
 	url = git@github.com:zeddworks/memcached_cookbook.git
+[submodule "site-cookbooks/gitorious"]
+	path = site-cookbooks/gitorious
+	url = git@github.com:zeddworks/gitorious_cookbook
