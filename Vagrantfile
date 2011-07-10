@@ -10,7 +10,7 @@ Vagrant::Config.run do |config|
 
   config.vm.define :chef_server do |chef_server_config|
     chef_server_config.vm.box = "vagrant-squeeze-amd64-rvm-07-04-2011-6586c1"
-    chef_server_config.vm.box_url = "http://www.zeddworks.com/vagrant-squeeze-amd64-rvm-07-04-2011-6586c1.box"
+    chef_server_config.vm.box_url = "http://www.zeddworks.com:8000/vagrant-squeeze-amd64-rvm-07-04-2011-6586c1.box"
     #chef_server_config.vm.boot_mode = :gui
 
     chef_server_config.vm.forward_port("chef-server", 4000, 4000, :auto => true)
@@ -41,7 +41,7 @@ Vagrant::Config.run do |config|
 
   config.vm.define :chef_client do |chef_client_config|
     chef_client_config.vm.box = "vagrant-squeeze-amd64-rvm-07-04-2011-6586c1"
-    chef_client_config.vm.box_url = "http://www.zeddworks.com/vagrant-squeeze-amd64-rvm-07-04-2011-6586c1.box"
+    chef_client_config.vm.box_url = "http://www.zeddworks.com:8000/vagrant-squeeze-amd64-rvm-07-04-2011-6586c1.box"
     #chef_client_config.vm.boot_mode = :gui
 
     chef_client_config.vm.forward_port "web", 80, 8080, :auto => true
