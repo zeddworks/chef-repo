@@ -4,9 +4,10 @@ Vagrant::Config.run do |config|
   # options are documented and commented below. For a complete reference,
   # please see the online documentation at vagrantup.com.
 
+  # Every Vagrant virtual environment requires a box to build off of.
+
   config.ssh.max_tries = 200
 
-  # Every Vagrant virtual environment requires a box to build off of.
   config.vm.define :chef_server do |chef_server_config|
     chef_server_config.vm.box = "vagrant-squeeze-amd64-rvm-07-04-2011-6586c1"
     chef_server_config.vm.box_url = "http://www.zeddworks.com/vagrant-squeeze-amd64-rvm-07-04-2011-6586c1.box"
