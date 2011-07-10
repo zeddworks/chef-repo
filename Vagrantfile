@@ -1,9 +1,10 @@
-config.ssh.max_tries = 200
 
 Vagrant::Config.run do |config|
   # All Vagrant configuration is done here. The most common configuration
   # options are documented and commented below. For a complete reference,
   # please see the online documentation at vagrantup.com.
+
+  config.ssh.max_tries = 200
 
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.define :chef_server do |chef_server_config|
