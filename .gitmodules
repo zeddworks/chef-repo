@@ -61,3 +61,6 @@
 [submodule "site-cookbooks/activemq"]
 	path = site-cookbooks/activemq
 	url = git://github.com/cookbooks/activemq.git
+[submodule "site-cookbooks/mysql"]
+	path = site-cookbooks/mysql
+	url = git@github.com:zeddworks/mysql_cookbook.git
