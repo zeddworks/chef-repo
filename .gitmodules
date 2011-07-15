@@ -66,4 +66,4 @@
 	url = git@github.com:zeddworks/mysql_cookbook.git
 [submodule "site-cookbooks/sphinx"]
 	path = site-cookbooks/sphinx
-	url = git@github.com:zeddworks/sphinx_cookbook.git
+	url = git@github.com:zeddworks/sphinx_cookbook
