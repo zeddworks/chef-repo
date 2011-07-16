@@ -58,3 +58,9 @@
 [submodule "site-cookbooks/gitorious"]
 	path = site-cookbooks/gitorious
 	url = git@github.com:zeddworks/gitorious_cookbook
+[submodule "site-cookbooks/mysql"]
+	path = site-cookbooks/mysql
+	url = git@github.com:zeddworks/mysql_cookbook.git
+[submodule "site-cookbooks/sphinx"]
+	path = site-cookbooks/sphinx
+	url = git@github.com:zeddworks/sphinx_cookbook
