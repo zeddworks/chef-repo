@@ -64,3 +64,6 @@
 [submodule "site-cookbooks/sphinx"]
 	path = site-cookbooks/sphinx
 	url = git@github.com:zeddworks/sphinx_cookbook
+[submodule "cookbooks/activemq"]
+	path = cookbooks/activemq
+	url = git://github.com/cookbooks/activemq.git
