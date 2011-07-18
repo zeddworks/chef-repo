@@ -67,3 +67,6 @@
 [submodule "cookbooks/activemq"]
 	path = cookbooks/activemq
 	url = git://github.com/cookbooks/activemq.git
+[submodule "site-cookbooks/aspell"]
+	path = site-cookbooks/aspell
+	url = git@github.com:zeddworks/aspell_cookbook
