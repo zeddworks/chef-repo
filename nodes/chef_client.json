@@ -1531,7 +1531,7 @@
   "chef_environment": "_default",
   "run_list": [
     "recipe[apt_cacher_ng]",
-    "recipe[refinery]"
+    "recipe[gitorious]"
   ],
   "chef_type": "node"
 }
