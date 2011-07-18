@@ -1531,8 +1531,6 @@
   "chef_environment": "_default",
   "run_list": [
     "recipe[apt_cacher_ng]",
-    "recipe[passenger_nginx]",
-    "recipe[postgresql]",
     "recipe[refinery]"
   ],
   "chef_type": "node"
