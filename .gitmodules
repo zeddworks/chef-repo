@@ -67,3 +67,6 @@
 [submodule "site-cookbooks/aspell"]
 	path = site-cookbooks/aspell
 	url = git@github.com:zeddworks/aspell_cookbook
+[submodule "site-cookbooks/rvm"]
+	path = site-cookbooks/rvm
+	url = git://github.com/fnichol/chef-rvm.git
