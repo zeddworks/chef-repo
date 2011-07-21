@@ -13,9 +13,6 @@
 [submodule "site-cookbooks/apt_cacher_ng"]
 	path = site-cookbooks/apt_cacher_ng
 	url = git@github.com:zeddworks/apt_cacher_ng_cookbook.git
-[submodule "site-cookbooks/rvm"]
-	path = site-cookbooks/rvm
-	url = git@github.com:zeddworks/rvm_cookbook.git
 [submodule "site-cookbooks/jks"]
 	path = site-cookbooks/jks
 	url = git@github.com:zeddworks/jks_cookbook.git
