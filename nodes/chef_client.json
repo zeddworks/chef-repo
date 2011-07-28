@@ -1531,6 +1531,7 @@
   "chef_environment": "_default",
   "run_list": [
     "recipe[apt_cacher_ng]",
+    "recipe[exim]",
     "recipe[gitorious]"
   ],
   "chef_type": "node"
