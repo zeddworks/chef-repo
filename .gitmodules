@@ -42,7 +42,7 @@
 	url = git@github.com:zeddworks/postgresql_cookbook.git
 [submodule "site-cookbooks/kanban"]
 	path = site-cookbooks/kanban
-	url = git@github.com:zeddworks/kanban_cookbook
+	url = git@github.com:zeddworks/kanban_cookbook.git
 [submodule "site-cookbooks/refinery"]
 	path = site-cookbooks/refinery
 	url = git@github.com:zeddworks/refinery_cookbook.git
@@ -54,19 +54,22 @@
 	url = git@github.com:zeddworks/memcached_cookbook.git
 [submodule "site-cookbooks/gitorious"]
 	path = site-cookbooks/gitorious
-	url = git@github.com:zeddworks/gitorious_cookbook
+	url = git@github.com:zeddworks/gitorious_cookbook.git
 [submodule "site-cookbooks/mysql"]
 	path = site-cookbooks/mysql
 	url = git@github.com:zeddworks/mysql_cookbook.git
 [submodule "site-cookbooks/sphinx"]
 	path = site-cookbooks/sphinx
-	url = git@github.com:zeddworks/sphinx_cookbook
+	url = git@github.com:zeddworks/sphinx_cookbook.git
 [submodule "cookbooks/activemq"]
 	path = cookbooks/activemq
 	url = git://github.com/cookbooks/activemq.git
 [submodule "site-cookbooks/aspell"]
 	path = site-cookbooks/aspell
-	url = git@github.com:zeddworks/aspell_cookbook
+	url = git@github.com:zeddworks/aspell_cookbook.git
 [submodule "cookbooks/rvm"]
 	path = cookbooks/rvm
 	url = git://github.com/fnichol/chef-rvm.git
+[submodule "site-cookbooks/exim"]
+	path = site-cookbooks/exim
+	url = git@github.com:zeddworks/exim_cookbook.git
