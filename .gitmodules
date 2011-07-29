@@ -73,3 +73,6 @@
 [submodule "site-cookbooks/exim"]
 	path = site-cookbooks/exim
 	url = git@github.com:zeddworks/exim_cookbook.git
+[submodule "site-cookbooks/hosts"]
+	path = site-cookbooks/hosts
+	url = git@github.com:zeddworks/hosts_cookbook.git
