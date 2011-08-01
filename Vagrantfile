@@ -60,13 +60,11 @@ Vagrant::Config.run do |config|
       chef.node_name = "git.zeddworks.com"
       chef.chef_server_url = "http://33.33.33.100:4000"
       chef.validation_key_path = "#{ENV['HOME']}/.chef/validation.pem"
-      chef.json.merge!(
-        {
-          :apt => {
-            :proxy_url => "33.33.33.100:3142"
-          },
+      chef.json = {
+        :apt => {
+          :proxy_url => "33.33.33.100:3142"
         }
-      )
+      }
     end
   end
 
