@@ -29,13 +29,11 @@ Vagrant::Config.run do |config|
       chef.cookbooks_path = ["cookbooks", "site-cookbooks"]
       chef.roles_path = "roles"
       chef.add_role "debian-chef-server"
-      chef.json.merge!(
-        {
-          :apt => {
-            :proxy_url => "localhost:3142"
-          }
+      chef.json = {
+        :apt => {
+          :proxy_url => "localhost:3142"
         }
-      )
+      }
     end
   end
 
@@ -46,6 +44,7 @@ Vagrant::Config.run do |config|
 
     chef_client_config.vm.forward_port "http", 80, 8080, :auto => true
     chef_client_config.vm.forward_port "https", 443, 8443, :auto => true
+    chef_client_config.vm.forward_port "git", 9418, 9418, :auto => true
 
     chef_client_config.vm.customize do |vm|
       vm.memory_size = 2048
