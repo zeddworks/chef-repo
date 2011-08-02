@@ -73,3 +73,6 @@
 [submodule "site-cookbooks/hosts"]
 	path = site-cookbooks/hosts
 	url = git@github.com:zeddworks/hosts_cookbook.git
+[submodule "site-cookbooks/activemq"]
+	path = site-cookbooks/activemq
+	url = git@github.com:zeddworks/activemq_cookbook.git
