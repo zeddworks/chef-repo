@@ -1533,7 +1533,8 @@
     "recipe[apt_cacher_ng]",
     "recipe[hosts]",
     "recipe[exim]",
-    "recipe[gitorious]"
+    "recipe[gitorious]",
+    "recipe[brand]"
   ],
   "chef_type": "node"
 }

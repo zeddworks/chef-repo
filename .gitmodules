@@ -76,3 +76,6 @@
 [submodule "site-cookbooks/activemq"]
 	path = site-cookbooks/activemq
 	url = git@github.com:zeddworks/activemq_cookbook.git
+[submodule "site-cookbooks/brand"]
+	path = site-cookbooks/brand
+	url = git@github.com:zeddworks/brand_cookbook.git
