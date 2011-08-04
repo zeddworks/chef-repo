@@ -47,7 +47,8 @@ Vagrant::Config.run do |config|
     chef_client_config.vm.forward_port "git", 9418, 9418, :auto => true
 
     chef_client_config.vm.customize do |vm|
-      vm.memory_size = 2048
+      vm.memory_size = 4096
+      vm.cpu_count = 4
     end
 
     chef_client_config.vm.network "33.33.33.10"
