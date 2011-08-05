@@ -32,6 +32,9 @@ Vagrant::Config.run do |config|
       chef.json = {
         :apt => {
           :proxy_url => "localhost:3142"
+        },
+        :rvm => {
+          :default_ruby => "ruby-1.8.7-p352"
         }
       }
     end
