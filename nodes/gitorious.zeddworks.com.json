@@ -1534,7 +1534,7 @@
     "recipe[hosts]",
     "recipe[exim]",
     "recipe[gitorious]",
-    "recipe[brand]"
+    "recipe[zw_brand::gitorious]"
   ],
   "chef_type": "node"
 }
