@@ -40,7 +40,7 @@ Vagrant::Config.run do |config|
   config.vm.define :chef_client do |chef_client_config|
     chef_client_config.vm.box = "vagrant-squeeze-amd64-rvm-07-23-2011-2a8470"
     chef_client_config.vm.box_url = "http://www.zeddworks.com:8000/vagrant-squeeze-amd64-rvm-07-23-2011-2a8470.box"
-    #chef_client_config.vm.boot_mode = :gui
+    chef_client_config.vm.boot_mode = :vrdp
 
     chef_client_config.vm.forward_port "http", 80, 8080, :auto => true
     chef_client_config.vm.forward_port "https", 443, 8443, :auto => true
