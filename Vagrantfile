@@ -63,6 +63,9 @@ Vagrant::Config.run do |config|
       chef.json = {
         :apt => {
           :proxy_url => "33.33.33.100:3142"
+        },
+        :rvm => {
+          :default_ruby => "ree-1.8.7-2011.03"
         }
       }
     end
