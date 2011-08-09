@@ -44,6 +44,7 @@ Vagrant::Config.run do |config|
 
     chef_client_config.vm.forward_port "http", 80, 8080, :auto => true
     chef_client_config.vm.forward_port "https", 443, 8443, :auto => true
+    chef_client_config.vm.forward_port "rsync", 873, 8873, :auto => true
     chef_client_config.vm.forward_port "git", 9418, 9418, :auto => true
 
     chef_client_config.vm.customize do |vm|
