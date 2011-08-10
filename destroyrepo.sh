@@ -11,7 +11,7 @@ do
   knife data bag delete -y $i
 done
 
-for i in `knife client list | grep -v chef-validator | grep -v chef-webui | grep -v smcleod | grep -v jmiller`
+for i in `knife client list | grep -v chef-validator | grep -v chef-webui | grep -v smcleod | grep -v jmiller | grep -v production`
 do
   knife client delete $i -y
 done
