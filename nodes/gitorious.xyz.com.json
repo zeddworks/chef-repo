@@ -1,5 +1,6 @@
 {
   "normal": {
+    "brand": "xyz"
   },
   "name": "gitorious.xyz.com",
   "override": {
@@ -14,8 +15,7 @@
     "recipe[apt_cacher_ng]",
     "recipe[hosts]",
     "recipe[exim]",
-    "recipe[gitorious]",
-    "recipe[xyz_brand::gitorious]"
+    "recipe[gitorious]"
   ],
   "chef_type": "node"
 }
