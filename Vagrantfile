@@ -6,6 +6,7 @@ Vagrant::Config.run do |config|
 
   # Every Vagrant virtual environment requires a box to build off of.
 
+  hostname = "gitorious.zeddworks.com"
   config.ssh.max_tries = 200
 
   config.vm.define :chef_server do |chef_server_config|
@@ -53,12 +54,12 @@ Vagrant::Config.run do |config|
     end
 
     chef_client_config.vm.network "33.33.33.10"
-    chef_client_config.vm.host_name = "gitorious.zeddworks.com"
+    chef_client_config.vm.host_name = hostname
 
     chef_client_config.vm.share_folder "v-data", "/vagrant_data", "data"
 
     chef_client_config.vm.provision :chef_client do |chef|
-      chef.node_name = "gitorious.xyz.com"
+      chef.node_name = hostname
       chef.chef_server_url = "http://33.33.33.100:4000"
       chef.validation_key_path = "#{ENV['HOME']}/.chef/validation.pem"
       chef.json = {

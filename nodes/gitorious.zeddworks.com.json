@@ -15,8 +15,7 @@
     "recipe[apt_cacher_ng]",
     "recipe[hosts]",
     "recipe[exim]",
-    "recipe[gitorious]",
-    "recipe[zw_brand::gitorious]"
+    "recipe[gitorious]"
   ],
   "chef_type": "node"
 }
