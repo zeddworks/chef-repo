@@ -6,7 +6,7 @@ Vagrant::Config.run do |config|
 
   # Every Vagrant virtual environment requires a box to build off of.
 
-  hostname = "gitorious.xyz.net"
+  hostname = "gitorious.zeddworks.com"
   config.ssh.max_tries = 200
 
   config.vm.define :chef_server do |chef_server_config|
